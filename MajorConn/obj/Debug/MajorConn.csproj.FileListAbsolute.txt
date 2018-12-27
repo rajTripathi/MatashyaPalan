@@ -1,0 +1,10 @@
+G:\Matshyapalan\MajorConn\bin\Debug\MajorConn.dll
+G:\Matshyapalan\MajorConn\bin\Debug\MajorConn.pdb
+G:\Matshyapalan\MajorConn\obj\Debug\MajorConn.csprojResolveAssemblyReference.cache
+G:\Matshyapalan\MajorConn\obj\Debug\MajorConn.dll
+G:\Matshyapalan\MajorConn\obj\Debug\MajorConn.pdb
+E:\MSP\Matshyapalan\MajorConn\bin\Debug\MajorConn.dll
+E:\MSP\Matshyapalan\MajorConn\bin\Debug\MajorConn.pdb
+E:\MSP\Matshyapalan\MajorConn\obj\Debug\MajorConn.csprojResolveAssemblyReference.cache
+E:\MSP\Matshyapalan\MajorConn\obj\Debug\MajorConn.dll
+E:\MSP\Matshyapalan\MajorConn\obj\Debug\MajorConn.pdb
