@@ -77,11 +77,12 @@
                     </div>
                 </div>
 
-                <%--<script src="../../Scripts/CAMPAIGNMANAGEMENT/ExpenseHeadItemEntry.js" type="text/javascript"></script>--%>
+            
 
-                <script src="../../scripts/Fishery/CategorySetup.js"></script>
+                
            
         </div>
     </div>
-
+    <script src="../../scripts/Fishery/CategorySetup.js"></script>
+    
 </asp:Content>

@@ -105,6 +105,12 @@
     <Content Include="Admin.aspx" />
     <Content Include="Bootstrap\css\signin.css" />
     <Content Include="Bootstrap\js\knockout-3.4.2.js" />
+    <Content Include="Images\b3.jpg" />
+    <Content Include="Images\banner2.jpg" />
+    <Content Include="Images\Capture.PNG" />
+    <Content Include="Images\Desktop-Fish-hd-Wallpapers.jpg" />
+    <Content Include="Images\gif-fish-10.gif" />
+    <Content Include="Images\giphy2.gif" />
     <Content Include="Login.aspx" />
     <Content Include="Login1.aspx" />
     <Content Include="Modules\Fishery\CategorySetup.aspx" />
@@ -132,6 +138,7 @@
     <Content Include="Bootstrap\css\bootstrap.css.map" />
     <Content Include="Bootstrap\css\bootstrap.min.css.map" />
     <Content Include="Handler\LoginHandler.ashx" />
+    <Content Include="MainbyA.Master" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -190,6 +197,13 @@
     <Compile Include="Main.Master.designer.cs">
       <DependentUpon>Main.Master</DependentUpon>
     </Compile>
+    <Compile Include="MainbyA.Master.cs">
+      <DependentUpon>MainbyA.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MainbyA.Master.designer.cs">
+      <DependentUpon>MainbyA.Master</DependentUpon>
+    </Compile>
     <Compile Include="Modules\Fishery\CategorySetup.aspx.cs">
       <DependentUpon>CategorySetup.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -240,6 +254,9 @@
       <Project>{11d490cf-5b26-459a-bac4-b4e5349aed38}</Project>
       <Name>BllFishary</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NewFolder1\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
