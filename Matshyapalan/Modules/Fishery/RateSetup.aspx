@@ -1,29 +1,58 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MainbyA.Master" AutoEventWireup="true" CodeBehind="CategorySetup.aspx.cs" Inherits="Matshyapalan.Modules.Fishery.CategorySetup" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MainbyA.Master" AutoEventWireup="true" CodeBehind="RateSetup.aspx.cs" Inherits="Matshyapalan.Modules.Fishery.RateSetup" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="wrapper row">
         <div class="col-md-10 frm pull-right animated slideInRight">
 
-           
+            <form class="form-horizontal" runat="server" id="Form1" role="form">
+                <div class="row">
+                    <div class="col-md-12">
+                        <legend>Rate Setup</legend>
+                        <hr />
+                    </div>
+                </div>
 
                 <div class="row">
                     <div class="col-md-3">
-                        Fish Category<span class="mandatory">*</span>
+                        Fish Size<span class="mandatory">*</span>
                     </div>
                     <div class="col-md-5">
-                        <input type="text" class="form-control" id="txtfishCategory" data-bind="value: fishCategory " />
+                        <select id="Select2" class="dropdown-select" data-bind='options: Parties, optionsText: "PartyNameNep",
+    optionsValue: $data, value: SelectedParty,
+    optionsCaption: "------छान्नुहोस्-------", event: { change: PartyChange }'>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        Fish Breed<span class="mandatory">*</span>
+                    </div>
+                    <div class="col-md-5">
+                        <select id="Select3" class="dropdown-select" data-bind='options: Parties, optionsText: "PartyNameNep",
+    optionsValue: $data, value: SelectedParty,
+    optionsCaption: "------छान्नुहोस्-------", event: { change: PartyChange }'>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3">
+                        Rate<span class="mandatory">*</span>
+                    </div>
+                    <div class="col-md-5">
+                        <input type="text" class="form-control" id="Rate" data-bind="value: Rate" />
                     </div>
                 </div>
 
                 <br />
                 <br />
-
                 <div class="row">
                     <div class="col-md-8">
                     </div>
                     <div class="col-md-4">
-                        <button id="btnAdd" class="btn btn-primary" data-bind="click: SaveCat">Add</button>
+                        <button id="btnAdd" class="btn btn-primary" data-bind="click: Add">Add</button>
                         <button id="btnCancel" class="btn btn-primary" data-bind="click: ClearControls">Cancel</button>
                     </div>
                 </div>
@@ -37,7 +66,7 @@
                                     <th style="width: 10%;">S.No
                                     </th>
 
-                                    <th>Category
+                                    <th>Harvest
                                     </th>
                                     <th>कार्य
                                     </th>
@@ -50,8 +79,9 @@
                                     </td>
 
                                     <td>
-                                        <span data-bind="text: fishCategory"></span>
+                                        <span data-bind="text: fishSize"></span>
                                     </td>
+
                                     <td>
                                         <%--<span data-bind="text: Action"></span>--%>
                                         <a data-bind="click: $root.EditExpenseHeadType" id="edit">
@@ -77,12 +107,10 @@
                     </div>
                 </div>
 
-            
+                <script src="../../Scripts/CAMPAIGNMANAGEMENT/ExpenseHeadItemEntry.js" type="text/javascript"></script>
 
-                
-           
+
+            </form>
         </div>
     </div>
-   
-    <script src="../../scripts/CategorySetup.js"></script>
 </asp:Content>

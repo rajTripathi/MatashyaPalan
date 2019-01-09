@@ -1,4 +1,4 @@
-﻿/// <reference path="jquery-3.3.1.min.js" />
+﻿
 
 
 
@@ -123,6 +123,7 @@ var LoginViewModel = function LoginViewModel() {
 };
 
 $(document).ready(function () {
+   
     //sessionStorage.clear();
     //ClearSession();
     ko.applyBindings(new LoginViewModel());

@@ -1,29 +1,66 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MainbyA.Master" AutoEventWireup="true" CodeBehind="CategorySetup.aspx.cs" Inherits="Matshyapalan.Modules.Fishery.CategorySetup" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MainbyA.Master" AutoEventWireup="true" CodeBehind="EmployeeRegistration.aspx.cs" Inherits="Matshyapalan.Modules.Employee.EmployeeRegistration" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="wrapper row">
         <div class="col-md-10 frm pull-right animated slideInRight">
 
-           
-
+            <form class="form-horizontal" runat="server" id="Form1" role="form">
                 <div class="row">
-                    <div class="col-md-3">
-                        Fish Category<span class="mandatory">*</span>
-                    </div>
-                    <div class="col-md-5">
-                        <input type="text" class="form-control" id="txtfishCategory" data-bind="value: fishCategory " />
+                    <div class="col-md-12">
+                        <legend>Employee Registration</legend>
+                        <hr />
                     </div>
                 </div>
 
+                <div class="row">
+                    <div class="col-md-3">
+                        Employee Name<span class="mandatory">*</span>
+                    </div>
+                    <div class="col-md-5">
+                        <input type="text" class="form-control" id="txtEmployeeName" data-bind="value: EmployeeName" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        Mobile No<span class="mandatory">*</span>
+                    </div>
+                    <div class="col-md-5">
+                        <input type="text" class="form-control" id="txtMobileNo" data-bind="value: MobileNo" />
+                    </div>
+                </div>
+                 <div class="row">
+                    <div class="col-md-3">
+                        Address<span class="mandatory">*</span>
+                    </div>
+                    <div class="col-md-5">
+                        <input type="text" class="form-control" id="txtAddress" data-bind="value: Address" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        Joining Date<span class="mandatory">*</span>
+                    </div>
+                    <div class="col-md-5">
+                        <input type="text" class="form-control" id="txtJoiningDate" data-bind="value: JoiningDate" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        Salary <span class="mandatory">*</span>
+                    </div>
+                    <div class="col-md-5">
+                        <input type="text" class="form-control" id="txtSalary" data-bind="value: Salary" />
+                    </div>
+                </div>
                 <br />
                 <br />
-
                 <div class="row">
                     <div class="col-md-8">
                     </div>
                     <div class="col-md-4">
-                        <button id="btnAdd" class="btn btn-primary" data-bind="click: SaveCat">Add</button>
+                        <button id="btnAdd" class="btn btn-primary" data-bind="click: Add">Add</button>
                         <button id="btnCancel" class="btn btn-primary" data-bind="click: ClearControls">Cancel</button>
                     </div>
                 </div>
@@ -37,9 +74,9 @@
                                     <th style="width: 10%;">S.No
                                     </th>
 
-                                    <th>Category
+                                    <th>Pond
                                     </th>
-                                    <th>कार्य
+                                    <th>Action
                                     </th>
                                 </tr>
                             </thead>
@@ -50,8 +87,9 @@
                                     </td>
 
                                     <td>
-                                        <span data-bind="text: fishCategory"></span>
+                                        <span data-bind="text: fishSize"></span>
                                     </td>
+
                                     <td>
                                         <%--<span data-bind="text: Action"></span>--%>
                                         <a data-bind="click: $root.EditExpenseHeadType" id="edit">
@@ -77,12 +115,11 @@
                     </div>
                 </div>
 
-            
+                <script src="../../Scripts/CAMPAIGNMANAGEMENT/ExpenseHeadItemEntry.js" type="text/javascript"></script>
 
-                
-           
+
+            </form>
         </div>
     </div>
-   
-    <script src="../../scripts/CategorySetup.js"></script>
+
 </asp:Content>

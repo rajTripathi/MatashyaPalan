@@ -112,15 +112,30 @@
     <Content Include="Images\gif-fish-10.gif" />
     <Content Include="Images\giphy2.gif" />
     <Content Include="Login.aspx" />
-    <Content Include="Login1.aspx" />
+    <Content Include="Modules\Employee\EmployeeRegistration.aspx" />
+    <Content Include="Modules\Employee\SalaryDistribution.aspx" />
+    <Content Include="Modules\Employee\UserManagement.aspx" />
+    <Content Include="Modules\Employee\UserRoleSetup.aspx" />
     <Content Include="Modules\Fishery\CategorySetup.aspx" />
+    <Content Include="Modules\Fishery\ExpenseEntry.aspx" />
+    <Content Include="Modules\Fishery\ExpenseTypeSetup.aspx" />
+    <Content Include="Modules\Fishery\FishBreedSetup.aspx" />
+    <Content Include="Modules\Fishery\FishSizeSetup.aspx" />
+    <Content Include="Modules\Fishery\HarvestSetup.aspx" />
     <Content Include="Modules\Fishery\Login.aspx" />
+    <Content Include="Modules\Fishery\PondSetup.aspx" />
+    <Content Include="Modules\Fishery\RateSetup.aspx" />
+    <Content Include="Modules\Fishery\SalesEntry.aspx" />
+    <Content Include="Modules\Reports\RptExpenses.aspx" />
+    <Content Include="Modules\Reports\RptSalaryDistribution.aspx" />
+    <Content Include="Modules\Reports\RptSales.aspx" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Main.Master" />
     <Content Include="Sales\SalesEntry.aspx" />
+    <Content Include="scripts\CategorySetup.js" />
     <Content Include="scripts\Fishery\CategorySetup.js" />
     <Content Include="scripts\jquery-3.3.1.min.js" />
     <Content Include="scripts\Login.js" />
@@ -183,13 +198,6 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Login1.aspx.cs">
-      <DependentUpon>Login1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Login1.aspx.designer.cs">
-      <DependentUpon>Login1.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Main.Master.cs">
       <DependentUpon>Main.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -204,6 +212,34 @@
     <Compile Include="MainbyA.Master.designer.cs">
       <DependentUpon>MainbyA.Master</DependentUpon>
     </Compile>
+    <Compile Include="Modules\Employee\EmployeeRegistration.aspx.cs">
+      <DependentUpon>EmployeeRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Employee\EmployeeRegistration.aspx.designer.cs">
+      <DependentUpon>EmployeeRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Employee\SalaryDistribution.aspx.cs">
+      <DependentUpon>SalaryDistribution.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Employee\SalaryDistribution.aspx.designer.cs">
+      <DependentUpon>SalaryDistribution.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Employee\UserManagement.aspx.cs">
+      <DependentUpon>UserManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Employee\UserManagement.aspx.designer.cs">
+      <DependentUpon>UserManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Employee\UserRoleSetup.aspx.cs">
+      <DependentUpon>UserRoleSetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Employee\UserRoleSetup.aspx.designer.cs">
+      <DependentUpon>UserRoleSetup.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Modules\Fishery\CategorySetup.aspx.cs">
       <DependentUpon>CategorySetup.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -211,12 +247,89 @@
     <Compile Include="Modules\Fishery\CategorySetup.aspx.designer.cs">
       <DependentUpon>CategorySetup.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Modules\Fishery\ExpenseEntry.aspx.cs">
+      <DependentUpon>ExpenseEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Fishery\ExpenseEntry.aspx.designer.cs">
+      <DependentUpon>ExpenseEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Fishery\ExpenseTypeSetup.aspx.cs">
+      <DependentUpon>ExpenseTypeSetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Fishery\ExpenseTypeSetup.aspx.designer.cs">
+      <DependentUpon>ExpenseTypeSetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Fishery\FishBreedSetup.aspx.cs">
+      <DependentUpon>FishBreedSetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Fishery\FishBreedSetup.aspx.designer.cs">
+      <DependentUpon>FishBreedSetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Fishery\FishSizeSetup.aspx.cs">
+      <DependentUpon>FishSizeSetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Fishery\FishSizeSetup.aspx.designer.cs">
+      <DependentUpon>FishSizeSetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Fishery\HarvestSetup.aspx.cs">
+      <DependentUpon>HarvestSetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Fishery\HarvestSetup.aspx.designer.cs">
+      <DependentUpon>HarvestSetup.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Modules\Fishery\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Modules\Fishery\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Fishery\PondSetup.aspx.cs">
+      <DependentUpon>PondSetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Fishery\PondSetup.aspx.designer.cs">
+      <DependentUpon>PondSetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Fishery\RateSetup.aspx.cs">
+      <DependentUpon>RateSetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Fishery\RateSetup.aspx.designer.cs">
+      <DependentUpon>RateSetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Fishery\SalesEntry.aspx.cs">
+      <DependentUpon>SalesEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Fishery\SalesEntry.aspx.designer.cs">
+      <DependentUpon>SalesEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Reports\RptExpenses.aspx.cs">
+      <DependentUpon>RptExpenses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Reports\RptExpenses.aspx.designer.cs">
+      <DependentUpon>RptExpenses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Reports\RptSalaryDistribution.aspx.cs">
+      <DependentUpon>RptSalaryDistribution.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Reports\RptSalaryDistribution.aspx.designer.cs">
+      <DependentUpon>RptSalaryDistribution.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Reports\RptSales.aspx.cs">
+      <DependentUpon>RptSales.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Reports\RptSales.aspx.designer.cs">
+      <DependentUpon>RptSales.aspx</DependentUpon>
     </Compile>
     <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
@@ -255,9 +368,7 @@
       <Name>BllFishary</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="NewFolder1\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
