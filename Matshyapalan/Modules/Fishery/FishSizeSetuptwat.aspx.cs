@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace Matshyapalan.Modules.Fishery
 {
-    public partial class CategorySetup : System.Web.UI.Page
+    public partial class FishSizeSetup : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

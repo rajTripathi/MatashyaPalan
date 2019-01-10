@@ -105,6 +105,7 @@
     <Content Include="Admin.aspx" />
     <Content Include="Bootstrap\css\signin.css" />
     <Content Include="Bootstrap\js\knockout-3.4.2.js" />
+    <Content Include="Handler\Fishery\FishSizeSetupHandler.ashx" />
     <Content Include="Images\b3.jpg" />
     <Content Include="Images\banner2.jpg" />
     <Content Include="Images\Capture.PNG" />
@@ -116,11 +117,10 @@
     <Content Include="Modules\Employee\SalaryDistribution.aspx" />
     <Content Include="Modules\Employee\UserManagement.aspx" />
     <Content Include="Modules\Employee\UserRoleSetup.aspx" />
-    <Content Include="Modules\Fishery\CategorySetup.aspx" />
+    <Content Include="Modules\Fishery\FishSizeSetup.aspx" />
     <Content Include="Modules\Fishery\ExpenseEntry.aspx" />
     <Content Include="Modules\Fishery\ExpenseTypeSetup.aspx" />
     <Content Include="Modules\Fishery\FishBreedSetup.aspx" />
-    <Content Include="Modules\Fishery\FishSizeSetup.aspx" />
     <Content Include="Modules\Fishery\HarvestSetup.aspx" />
     <Content Include="Modules\Fishery\Login.aspx" />
     <Content Include="Modules\Fishery\PondSetup.aspx" />
@@ -137,6 +137,7 @@
     <Content Include="Sales\SalesEntry.aspx" />
     <Content Include="scripts\CategorySetup.js" />
     <Content Include="scripts\Fishery\CategorySetup.js" />
+    <Content Include="scripts\Fishery\FishSizeSetup.js" />
     <Content Include="scripts\jquery-3.3.1.min.js" />
     <Content Include="scripts\Login.js" />
     <Content Include="scripts\SOSYS.Common.js" />
@@ -187,6 +188,9 @@
     </Compile>
     <Compile Include="Admin.aspx.designer.cs">
       <DependentUpon>Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\Fishery\FishSizeSetupHandler.ashx.cs">
+      <DependentUpon>FishSizeSetupHandler.ashx</DependentUpon>
     </Compile>
     <Compile Include="Handler\LoginHandler.ashx.cs">
       <DependentUpon>LoginHandler.ashx</DependentUpon>
@@ -240,12 +244,12 @@
     <Compile Include="Modules\Employee\UserRoleSetup.aspx.designer.cs">
       <DependentUpon>UserRoleSetup.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Modules\Fishery\CategorySetup.aspx.cs">
-      <DependentUpon>CategorySetup.aspx</DependentUpon>
+    <Compile Include="Modules\Fishery\FishSizeSetup.aspx.cs">
+      <DependentUpon>FishSizeSetup.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Modules\Fishery\CategorySetup.aspx.designer.cs">
-      <DependentUpon>CategorySetup.aspx</DependentUpon>
+    <Compile Include="Modules\Fishery\FishSizeSetup.aspx.designer.cs">
+      <DependentUpon>FishSizeSetup.aspx</DependentUpon>
     </Compile>
     <Compile Include="Modules\Fishery\ExpenseEntry.aspx.cs">
       <DependentUpon>ExpenseEntry.aspx</DependentUpon>
@@ -267,13 +271,6 @@
     </Compile>
     <Compile Include="Modules\Fishery\FishBreedSetup.aspx.designer.cs">
       <DependentUpon>FishBreedSetup.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Modules\Fishery\FishSizeSetup.aspx.cs">
-      <DependentUpon>FishSizeSetup.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Modules\Fishery\FishSizeSetup.aspx.designer.cs">
-      <DependentUpon>FishSizeSetup.aspx</DependentUpon>
     </Compile>
     <Compile Include="Modules\Fishery\HarvestSetup.aspx.cs">
       <DependentUpon>HarvestSetup.aspx</DependentUpon>
@@ -366,6 +363,10 @@
     <ProjectReference Include="..\BllFishary\BllFishary.csproj">
       <Project>{11d490cf-5b26-459a-bac4-b4e5349aed38}</Project>
       <Name>BllFishary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DllFishary\DllFishary.csproj">
+      <Project>{a98509e8-9513-459a-a885-e5ddcfb5fd41}</Project>
+      <Name>DllFishary</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />
