@@ -23,8 +23,8 @@ namespace DllFishary
             oCommand.CommandType = CommandType.StoredProcedure;
             oCommand.CommandText = "mt_login";
             SqlParameter[] objParameter = new SqlParameter[2];
-            objParameter[0] = new SqlParameter("@Uname", objCampaignParameter.UserName);
-            objParameter[1] = new SqlParameter("@pwd", objCampaignParameter.Password);
+            objParameter[0] = new SqlParameter("@username", objCampaignParameter.UserName);
+            objParameter[1] = new SqlParameter("@password", objCampaignParameter.Password);
            // objParameter[2] = new SqlParameter("@submitteddate", "2018.01.07");
            // objParameter[3] = new SqlParameter("@submittebBy", "Admin");
            SqlDataReader dr=   SqlHelper.ExecuteReader( oCommand, objParameter);

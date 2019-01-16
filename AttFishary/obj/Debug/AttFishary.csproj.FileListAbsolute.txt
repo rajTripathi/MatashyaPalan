@@ -19,3 +19,8 @@ C:\Arun\MspDbScript\Matshyapalan\AttFishary\obj\Debug\AttFishary.csprojAssemblyR
 C:\Arun\MspDbScript\Matshyapalan\AttFishary\obj\Debug\AttFishary.csproj.CoreCompileInputs.cache
 C:\Arun\MspDbScript\Matshyapalan\AttFishary\obj\Debug\AttFishary.dll
 C:\Arun\MspDbScript\Matshyapalan\AttFishary\obj\Debug\AttFishary.pdb
+E:\ANMSP\MatashyaPalan\AttFishary\bin\Debug\AttFishary.dll
+E:\ANMSP\MatashyaPalan\AttFishary\bin\Debug\AttFishary.pdb
+E:\ANMSP\MatashyaPalan\AttFishary\obj\Debug\AttFishary.csprojResolveAssemblyReference.cache
+E:\ANMSP\MatashyaPalan\AttFishary\obj\Debug\AttFishary.dll
+E:\ANMSP\MatashyaPalan\AttFishary\obj\Debug\AttFishary.pdb

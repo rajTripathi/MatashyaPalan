@@ -26,7 +26,7 @@
                 <div class="col-md-8">
                 </div>
                 <div class="col-md-4">
-                    <button id="btnAdd" class="btn btn-primary" >Add</button>
+                    <button id="btnAdd" class="btn btn-primary" data-bind="click: Add" >Add</button>
                     <button id="btnCancel" class="btn btn-primary">Cancel</button>
                 </div>
             </div>
@@ -71,7 +71,7 @@
                 <div class="col-md-8">
                 </div>
                 <div class="col-md-4">
-                    <button id="btnSubmit" class="btn btn-primary">Save</button>
+                    <button id="btnSubmit" class="btn btn-primary" data-bind="click: SaveFishSize">Save</button>
 
 
 

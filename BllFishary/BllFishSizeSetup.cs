@@ -27,6 +27,22 @@ namespace BllFishary
         }
 
 
+        public string SaveFishSize(List<FishSizeATT> args, string role)
+        {
+            try
+            {
+                DLLFishSizeSetup obj = new DLLFishSizeSetup();
+                return obj.SaveFishSize(args, role);
+
+            }
+            catch (Exception ex)
+            {
+                throw (ex);
+            }
+
+        }
+
+
         //public string SaveExpenseHeadType(List<ATTExpenseHeadType> lst, string role)
         //{
         //    try

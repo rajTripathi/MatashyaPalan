@@ -34,3 +34,12 @@ C:\Arun\MspDbScript\Matshyapalan\DllFishary\obj\Debug\DllFishary.csproj.CoreComp
 C:\Arun\MspDbScript\Matshyapalan\DllFishary\obj\Debug\DllFishary.csproj.CopyComplete
 C:\Arun\MspDbScript\Matshyapalan\DllFishary\obj\Debug\DllFishary.dll
 C:\Arun\MspDbScript\Matshyapalan\DllFishary\obj\Debug\DllFishary.pdb
+E:\ANMSP\MatashyaPalan\DllFishary\bin\Debug\DllFishary.dll
+E:\ANMSP\MatashyaPalan\DllFishary\bin\Debug\DllFishary.pdb
+E:\ANMSP\MatashyaPalan\DllFishary\bin\Debug\AttFishary.dll
+E:\ANMSP\MatashyaPalan\DllFishary\bin\Debug\MajorConn.dll
+E:\ANMSP\MatashyaPalan\DllFishary\bin\Debug\AttFishary.pdb
+E:\ANMSP\MatashyaPalan\DllFishary\bin\Debug\MajorConn.pdb
+E:\ANMSP\MatashyaPalan\DllFishary\obj\Debug\DllFishary.csprojResolveAssemblyReference.cache
+E:\ANMSP\MatashyaPalan\DllFishary\obj\Debug\DllFishary.dll
+E:\ANMSP\MatashyaPalan\DllFishary\obj\Debug\DllFishary.pdb

@@ -36,3 +36,12 @@ C:\Arun\MspDbScript\Matshyapalan\Security\obj\Debug\Security.csproj.CoreCompileI
 C:\Arun\MspDbScript\Matshyapalan\Security\obj\Debug\Security.csproj.CopyComplete
 C:\Arun\MspDbScript\Matshyapalan\Security\obj\Debug\Security.dll
 C:\Arun\MspDbScript\Matshyapalan\Security\obj\Debug\Security.pdb
+E:\ANMSP\MatashyaPalan\Security\bin\Debug\Security.dll
+E:\ANMSP\MatashyaPalan\Security\bin\Debug\Security.pdb
+E:\ANMSP\MatashyaPalan\Security\bin\Debug\Newtonsoft.Json.dll
+E:\ANMSP\MatashyaPalan\Security\bin\Debug\System.Web.dll
+E:\ANMSP\MatashyaPalan\Security\bin\Debug\Newtonsoft.Json.pdb
+E:\ANMSP\MatashyaPalan\Security\bin\Debug\Newtonsoft.Json.xml
+E:\ANMSP\MatashyaPalan\Security\obj\Debug\Security.csprojResolveAssemblyReference.cache
+E:\ANMSP\MatashyaPalan\Security\obj\Debug\Security.dll
+E:\ANMSP\MatashyaPalan\Security\obj\Debug\Security.pdb

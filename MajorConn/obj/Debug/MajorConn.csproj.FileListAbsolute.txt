@@ -14,3 +14,8 @@ C:\Arun\MspDbScript\Matshyapalan\MajorConn\obj\Debug\MajorConn.csprojAssemblyRef
 C:\Arun\MspDbScript\Matshyapalan\MajorConn\obj\Debug\MajorConn.csproj.CoreCompileInputs.cache
 C:\Arun\MspDbScript\Matshyapalan\MajorConn\obj\Debug\MajorConn.dll
 C:\Arun\MspDbScript\Matshyapalan\MajorConn\obj\Debug\MajorConn.pdb
+E:\ANMSP\MatashyaPalan\MajorConn\bin\Debug\MajorConn.dll
+E:\ANMSP\MatashyaPalan\MajorConn\bin\Debug\MajorConn.pdb
+E:\ANMSP\MatashyaPalan\MajorConn\obj\Debug\MajorConn.csprojResolveAssemblyReference.cache
+E:\ANMSP\MatashyaPalan\MajorConn\obj\Debug\MajorConn.dll
+E:\ANMSP\MatashyaPalan\MajorConn\obj\Debug\MajorConn.pdb

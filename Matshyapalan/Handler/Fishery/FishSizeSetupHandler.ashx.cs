@@ -11,7 +11,7 @@ namespace Matshyapalan.Handler.Fishery
     /// <summary>
     /// Summary description for FishSizeSetupHandler
     /// </summary>
-    public class FishSizeSetupHandler : IHttpHandler
+    public class FishSizeSetupHandler : BaseHandler
     {
 
         public object GetFishCategoryType(int ExpItmId, string Visibility, string p_rc, string role)
@@ -30,6 +30,37 @@ namespace Matshyapalan.Handler.Fishery
                 response.IsSucess = false;
             }
             return JsonUtility.Serialize(response);
+        }
+
+        public object SaveFishSize(string args, string role)
+        {
+
+            JsonResponse response = new JsonResponse();
+            //if (token == CurrentToken())
+            //{
+            BllFishSizeSetup objBll = new BllFishSizeSetup();
+           List<FishSizeATT> ll = JsonUtility.DeSerialize(args, typeof(List<FishSizeATT>)) as List<FishSizeATT>;
+            // response.Message = bl.SaveParameter(ll, role);
+            try
+            {
+                 response.ResponseData = objBll.SaveFishSize(ll, role);
+                if (response.Message != "")
+                {
+                    response.IsSucess = false;
+                }
+                else
+                {
+                    response.IsSucess = true;
+                }
+
+            }
+            catch (Exception ex)
+            {
+                response.Message = ex.Message;
+                response.IsSucess = false;
+            }
+            return JsonUtility.Serialize(response);
+
         }
 
         public void ProcessRequest(HttpContext context)

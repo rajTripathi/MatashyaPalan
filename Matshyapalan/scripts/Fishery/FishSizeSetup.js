@@ -59,14 +59,13 @@ function FishSizeSetupViewModel() {
 
     //..to get the data
     self.GetFishCategoryType = function () {
-        alert("welcome");
-        debugger;
+      
         $.ajax({
             dataType: "json",
             cache: false,
             async: false,
             //Handler\Fishery\FishSizeSetupHandler.ashx
-            url: '../Handler/Fishery/FishSizeSetupHandler.ashx',
+            url: '/Handler/Fishery/FishSizeSetupHandler.ashx',
             data: { 'method': 'GetFishCategoryType', 'ExpItmId': null, 'Visibility': null, 'p_rc': null, 'role': self.role() },
             contentType: "application/json; charset=utf-8",
             success: function (result) {
@@ -81,8 +80,8 @@ function FishSizeSetupViewModel() {
                     return new ExpenseHeadType(item)
                 });
 
-                self.ExpenseHeads(mappedTask);
-                waitMsg.hide();
+                self.FishSizes(mappedTask);
+               // waitMsg.hide();
             },
             error: function (err) {
                 //msg(err.status + " - " + err.statusText, "FAILURE");
@@ -95,7 +94,7 @@ function FishSizeSetupViewModel() {
 
     //to add to table
     self.Add = function () {
-
+        debugger;
         //  alert(self.Visibility());
 
         var errMsg = "";
@@ -107,11 +106,11 @@ function FishSizeSetupViewModel() {
         if (add != undefined) {
 
             //validating controls      
-            if (self.Validation()) {
-                add.ExpenseHeadTypeID(self.ExpenseHeadTypeID());
-                add.DescriptionInNepali(self.DescriptionInNepali());
-                add.DescriptionInEnglish(self.DescriptionInEnglish());
-                add.Visibility(self.Visibility());
+           // if (self.Validation()) {
+                add.SizeId(self.SizeId());
+                add.fishSize(self.fishSize());
+               // add.DescriptionInEnglish(self.DescriptionInEnglish());
+               // add.Visibility(self.Visibility());
                 add.EntryBy(self.EntryBy());
                 add.EntryDate = null;
                 var action = self.Action() == "A" ? "A" : "E";
@@ -122,43 +121,43 @@ function FishSizeSetupViewModel() {
 
                 self.ClearControls();
 
-            }
+           // }
         }
 
         //---------in case of adding new record to table----------------
         else {
 
-            if (self.Validation()) {
+            //if (self.Validation()) {
 
                 var errMsg = "";
                 var objFocus = null;
                 var pro;
 
                 pro = {
-                    ExpenseHeadTypeID: null,
-                    DescriptionInNepali: self.DescriptionInNepali(),
-                    DescriptionInEnglish: self.DescriptionInEnglish(),
-                    Visibility: self.Visibility(),
+                    SizeId: null,
+                   // DescriptionInNepali: self.DescriptionInNepali(),
+                    fishSize: self.fishSize(),
+                    //Visibility: self.Visibility(),
                     Status: "I",
                     EntryBy: self.EntryBy(),
                     EntryDate: null,
                     Action: "A"
                 };
 
-                self.ExpenseHeads.push(pro);
+                self.FishSizes.push(pro);
 
-                console.log(ko.toJS(self.ExpenseHeads()));
-                self.ClearControls();
-            }
+                //console.log(ko.toJS(self.ExpenseHeads()));
+               // self.ClearControls();
+           // }
         }
     }
 
 
 
-    self.SaveExpenseHeadType = function () {
-
+    self.SaveFishSize = function () {
+        debugger;
         // var obj = JSON.stringify(ko.toJS(self.HeadTypes()));
-        var obj = ko.toJS(self.ExpenseHeads());
+        var obj = ko.toJS(self.FishSizes());
         //console.log(obj);
         //        var l = self.DescriptionInNepali;
         //        console.log(l);
@@ -166,12 +165,12 @@ function FishSizeSetupViewModel() {
 
         for (var i = 0; i < obj.length; i++) {
             var kd = {
-                ExpenseHeadTypeID: obj[i].ExpenseHeadTypeID,
-                DescriptionInNepali: obj[i].DescriptionInNepali,
-                DescriptionInEnglish: obj[i].DescriptionInEnglish,
-                Visibility: obj[i].Visibility == true ? "A" : "I",
+                SizeId: obj[i].SizeId,
+                SizeName: obj[i].fishSize,
+               // DescriptionInEnglish: obj[i].DescriptionInEnglish,
+              //  Visibility: obj[i].Visibility == true ? "A" : "I",
 
-                Status: obj[i].Status,
+              //  Status: obj[i].Status,
                 EntryBy: obj[i].EntryBy,
                 EntryDate: obj[i].EntryDate,
                 Action: obj[i].Action
@@ -180,22 +179,22 @@ function FishSizeSetupViewModel() {
         }
         //console.log(obj1);
         var k = JSON.stringify(ko.toJS(obj1));
-        //console.log(k);
+        //console.log(k)
 
-        var url = '../../Handlers/CAMPAIGNMANAGEMENT/ExpenseHeadItemEntry.ashx';
-        var method = "SaveExpenseHeadType";
+        var url = '/Handler/Fishery/FishSizeSetupHandler.ashx';
+        var method = "SaveFishSize";
         var data = { 'method': method, 'args': k, 'role': self.role() };
         $.post(url, data, function (result) {
             var obj = jQuery.parseJSON(result);
             if (obj.IsSucess) {
                 msg(obj.Message);
-                self.GetExpenseHeadType();
+               // self.GetExpenseHeadType();
             }
             else {
                 msg(obj.Message, "WARNING");
             }
         });
-        self.ClearControls();
+       // self.ClearControls();
 
     }
 

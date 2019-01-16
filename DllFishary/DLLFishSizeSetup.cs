@@ -1,6 +1,9 @@
 ﻿using AttFishary;
+using MajorConn;
 using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -83,6 +86,39 @@ namespace DllFishary
         //    {
         //        conn.CloseDbConn();
         //    }
+
+        }
+
+
+        public string SaveFishSize(List<FishSizeATT> obj, string role)
+        {
+            string SP = "";
+            string msg = "";
+            char status;
+            SqlCommand oCommand = new SqlCommand();
+            oCommand.CommandType = CommandType.StoredProcedure;
+            oCommand.CommandText = "mt_login";
+            SqlParameter[] objParameter = new SqlParameter[2];
+            foreach (FishSizeATT ob in obj)
+            {
+                objParameter[0] = new SqlParameter("@username", ob.SizeName);
+
+                // objParameter[1] = new SqlParameter("@password", obj.Password);
+                objParameter[2] = new SqlParameter("@submitteddate", "2018.01.07");
+                objParameter[3] = new SqlParameter("@submittebBy", "Admin");
+                SqlDataReader dr = SqlHelper.ExecuteReader(oCommand, objParameter);
+                if (dr.HasRows)
+                {
+                    msg = "";
+
+                }
+                else
+                {
+                    msg = " कुनै डाटा छैन!!!";
+                }
+            }
+
+            return msg;
 
         }
 

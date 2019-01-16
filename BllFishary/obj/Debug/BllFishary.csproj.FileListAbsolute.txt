@@ -42,3 +42,14 @@ C:\Arun\MspDbScript\Matshyapalan\BllFishary\obj\Debug\BllFishary.csproj.CoreComp
 C:\Arun\MspDbScript\Matshyapalan\BllFishary\obj\Debug\BllFishary.csproj.CopyComplete
 C:\Arun\MspDbScript\Matshyapalan\BllFishary\obj\Debug\BllFishary.dll
 C:\Arun\MspDbScript\Matshyapalan\BllFishary\obj\Debug\BllFishary.pdb
+E:\ANMSP\MatashyaPalan\BllFishary\bin\Debug\BllFishary.dll
+E:\ANMSP\MatashyaPalan\BllFishary\bin\Debug\BllFishary.pdb
+E:\ANMSP\MatashyaPalan\BllFishary\bin\Debug\AttFishary.dll
+E:\ANMSP\MatashyaPalan\BllFishary\bin\Debug\DllFishary.dll
+E:\ANMSP\MatashyaPalan\BllFishary\bin\Debug\MajorConn.dll
+E:\ANMSP\MatashyaPalan\BllFishary\bin\Debug\AttFishary.pdb
+E:\ANMSP\MatashyaPalan\BllFishary\bin\Debug\DllFishary.pdb
+E:\ANMSP\MatashyaPalan\BllFishary\bin\Debug\MajorConn.pdb
+E:\ANMSP\MatashyaPalan\BllFishary\obj\Debug\BllFishary.csprojResolveAssemblyReference.cache
+E:\ANMSP\MatashyaPalan\BllFishary\obj\Debug\BllFishary.dll
+E:\ANMSP\MatashyaPalan\BllFishary\obj\Debug\BllFishary.pdb
