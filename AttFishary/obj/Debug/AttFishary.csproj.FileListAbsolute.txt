@@ -13,3 +13,14 @@ E:\MSP\Matshyapalan\AttFishary\bin\Debug\AttFishary.pdb
 E:\MSP\Matshyapalan\AttFishary\obj\Debug\AttFishary.csprojResolveAssemblyReference.cache
 E:\MSP\Matshyapalan\AttFishary\obj\Debug\AttFishary.dll
 E:\MSP\Matshyapalan\AttFishary\obj\Debug\AttFishary.pdb
+C:\Arun\MspDbScript\Matshyapalan\AttFishary\bin\Debug\AttFishary.dll
+C:\Arun\MspDbScript\Matshyapalan\AttFishary\bin\Debug\AttFishary.pdb
+C:\Arun\MspDbScript\Matshyapalan\AttFishary\obj\Debug\AttFishary.csprojAssemblyReference.cache
+C:\Arun\MspDbScript\Matshyapalan\AttFishary\obj\Debug\AttFishary.csproj.CoreCompileInputs.cache
+C:\Arun\MspDbScript\Matshyapalan\AttFishary\obj\Debug\AttFishary.dll
+C:\Arun\MspDbScript\Matshyapalan\AttFishary\obj\Debug\AttFishary.pdb
+E:\ANMSP\MatashyaPalan\AttFishary\bin\Debug\AttFishary.dll
+E:\ANMSP\MatashyaPalan\AttFishary\bin\Debug\AttFishary.pdb
+E:\ANMSP\MatashyaPalan\AttFishary\obj\Debug\AttFishary.csprojResolveAssemblyReference.cache
+E:\ANMSP\MatashyaPalan\AttFishary\obj\Debug\AttFishary.dll
+E:\ANMSP\MatashyaPalan\AttFishary\obj\Debug\AttFishary.pdb

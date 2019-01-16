@@ -28,18 +28,19 @@ namespace DllFishary
            // objParameter[2] = new SqlParameter("@submitteddate", "2018.01.07");
            // objParameter[3] = new SqlParameter("@submittebBy", "Admin");
            SqlDataReader dr=   SqlHelper.ExecuteReader( oCommand, objParameter);
-            //if (dr.HasRows)
-            //{
-            //     msg = "";
-
-            //}
-            //else {
-            //     msg = " कुनै डाटा छैन!!!";
-            //}
-            while (dr.Read())
+            if (dr.HasRows)
             {
-                string col = dr["UserName"].ToString();
+                msg = "";
+
             }
+            else
+            {
+                msg = " कुनै डाटा छैन!!!";
+            }
+            //while (dr.Read())
+            //{
+            //    string col = dr["UserName"].ToString();
+            //}
             //GetConnection conn = new GetConnection();
             //OracleConnection dbConn = conn.GetDbConn(role);
             //OracleTransaction tran = dbConn.BeginTransaction();
